@@ -1,10 +1,8 @@
-import {Component} from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-greeting',
   standalone: true,
   templateUrl: './greeting.component.html',
 })
-export class GreetingComponent {
-
-}
+export class GreetingComponent {}

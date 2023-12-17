@@ -1,5 +1,5 @@
-import {Component} from "@angular/core";
-import {TitleComponent} from "../../title/title.component";
+import { Component } from '@angular/core';
+import { TitleComponent } from '../../title/title.component';
 
 @Component({
   templateUrl: './components.component.html',

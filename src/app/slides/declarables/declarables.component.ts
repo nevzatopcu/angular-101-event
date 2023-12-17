@@ -1,5 +1,5 @@
-import {Component} from "@angular/core";
-import {TitleComponent} from "../../title/title.component";
+import { Component } from '@angular/core';
+import { TitleComponent } from '../../title/title.component';
 
 @Component({
   selector: '[declarables]',
@@ -12,9 +12,9 @@ export class DeclarablesComponent {
     <input
         [value]="name"
         (valueChange)="name = $event.target.value" />
-  `
+  `;
 
-  readonly callGreeting = `<app-greeting [name]="name" />`
+  readonly callGreeting = `<app-greeting [name]="name" />`;
 
   readonly clickDirective = `
 @Directive({
@@ -32,7 +32,7 @@ export class ExternalLinkDirective {
     }
   }
 }
-  `
+  `;
 
   readonly pipeExample1 = `
 @Component({
@@ -44,8 +44,8 @@ export class ExternalLinkDirective {
 export class BirthdayFormattingComponent {
   birthday = new Date(1988, 3, 15); // April 15, 1988
 }
-`
-  readonly  pipeExample2 = `
+`;
+  readonly pipeExample2 = `
 /*
  * Raise the value exponentially
  * Takes an exponent argument that defaults to 1.
@@ -64,5 +64,5 @@ export class ExponentialStrengthPipe implements PipeTransform {
     return Math.pow(value, exponent);
   }
 }
-  `
+  `;
 }

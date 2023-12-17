@@ -1,5 +1,5 @@
-import {Component} from "@angular/core";
-import {TitleComponent} from "../../title/title.component";
+import { Component } from '@angular/core';
+import { TitleComponent } from '../../title/title.component';
 
 @Component({
   selector: 'create-angular-app',
@@ -7,9 +7,7 @@ import {TitleComponent} from "../../title/title.component";
   template: `
     <app-title>Create Angular App</app-title>
     <div class="flex flex-col">
-      <p>
-        npx &#64;angular/cli new &lt;project-name&gt;
-      </p>
+      <p>npx &#64;angular/cli new &lt;project-name&gt;</p>
       <div class="flex-grow flex ">
         <video data-autoplay>
           <source data-src="/assets/Untitled.mov" />
@@ -17,8 +15,7 @@ import {TitleComponent} from "../../title/title.component";
         </video>
       </div>
     </div>
-
   `,
-  imports: [TitleComponent]
+  imports: [TitleComponent],
 })
 export class CreateAngularAppComponent {}

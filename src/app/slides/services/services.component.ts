@@ -1,13 +1,11 @@
-import {Component} from "@angular/core";
-import {TitleComponent} from "../../title/title.component";
+import { Component } from '@angular/core';
+import { TitleComponent } from '../../title/title.component';
 
 @Component({
   selector: '[app-services]',
   standalone: true,
-  imports: [
-    TitleComponent
-  ],
-  templateUrl: './services.component.html'
+  imports: [TitleComponent],
+  templateUrl: './services.component.html',
 })
 export class ServicesComponent {
   loggerService = `
@@ -27,7 +25,7 @@ export class LoggerService {
     console.error(message)
   }
 }
-  `
+  `;
 
   heroService = `
 @Injectable({
@@ -47,5 +45,5 @@ export class HeroService {
     return this.heroes;
   }
 }
-  `
+  `;
 }
