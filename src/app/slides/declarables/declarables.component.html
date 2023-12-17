@@ -1,0 +1,78 @@
+<section data-auto-animate>
+  <app-title>Component</app-title>
+  <h5>Component Decorator</h5>
+  <pre><code data-trim data-noescape data-line-numbers="1|2|3|4|5|7">
+{{'@'}}Component({{'{'}}
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    standalone: true,
+    imports: []
+{{'}'}})
+export class AppComponent {{'{'}}
+    public readonly name = 'Ng Turkey'
+{{'}'}}
+  </code></pre>
+
+  <pre><code data-trim >
+    Hello {{'{{'}}name{{'}}'}}
+  </code></pre>
+</section>
+
+<section data-auto-animate>
+  <app-title>Component</app-title>
+  <h5>Component Interaction</h5>
+
+  <pre><code data-trim data-noescape data-line-numbers="8|3">
+{{'@'}}Component({{'{'}}
+    selector: 'app-greeting',
+    template: `{{'{{'}} name {{'}}'}}`
+    standalone: true,
+    imports: []
+{{'}'}})
+export class GreetingComponent {{'{'}}
+    {{'@'}}Input({{'{'}}required: true{{'}'}}) name: string;
+{{'}'}}
+  </code></pre>
+
+<div class="fade-in fragment">
+    <pre><code data-trim data-noescape data-line-numbers="3|5">
+{{'@'}}Component({{'{'}}
+      selector: 'app-root',
+    template: `{{callGreeting}}`
+    standalone: true,
+    imports: [GreetingComponent]
+{{'}'}})
+export class AppComponent {{'{'}}
+      public readonly name = 'Ng Turkey'
+{{'}'}}
+  </code></pre>
+</div>
+</section>
+
+<section data-auto-animate>
+  <app-title>Directive</app-title>
+
+  <pre class="typescript">
+    <code data-trim data-noescape data-line-numbers="1|2|3|6|7-14">
+      {{clickDirective}}
+    </code>
+  </pre>
+</section>
+
+<section data-auto-animate>
+  <app-title>Pipe</app-title>
+  <pre class="typescript">
+    <code data-trim data-noescape data-line-numbers="8|5|4">
+      {{pipeExample1}}
+    </code>
+  </pre>
+</section>
+
+<section data-auto-animate>
+  <app-title>Custom Pipe</app-title>
+  <pre class="typescript">
+    <code data-trim data-noescape data-line-numbers="10-13|14|15-17|5|7">
+      {{pipeExample2}}
+    </code>
+  </pre>
+</section>

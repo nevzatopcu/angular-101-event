@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import "reveal.js/dist/reveal.css";
+@import "reveal.js/dist/theme/night.css";
+@import "reveal.js/plugin/highlight/monokai.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --r-main-font-size: 30px
+}
+
+@layer base {
+  section {
+    @apply w-full h-full items-center justify-center;
+  }
+
+  p, ul, ol, section {
+    @apply text-start
+  }
+
+  .fragment.blur {
+    filter: blur(5px);
+  }
+  .fragment.blur.visible.current-fragment {
+    filter: none;
+  }
+
+  .reveal pre code {
+    max-height: 500px !important;
+  }
+}
+
+
