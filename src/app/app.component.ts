@@ -14,10 +14,9 @@ import { ServicesComponent } from './slides/services/services.component';
 import { WhyAngularComponent } from './slides/why-angular/why-angular.component';
 import { SkillsYouNeedComponent } from './slides/skills-you-need/skills-you-need.component';
 import { WhoUseAngularComponent } from './slides/who-use-angular/who-use-angular.component';
+import {QaComponent} from "./slides/qa/qa.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
   imports: [
     GreetingComponent,
     AgendaComponent,
@@ -30,12 +29,15 @@ import { WhoUseAngularComponent } from './slides/who-use-angular/who-use-angular
     ComponentsComponent,
     ResourcesComponent,
     ServicesComponent,
+    QaComponent,
     WhyAngularComponent,
     SkillsYouNeedComponent,
     WhoUseAngularComponent,
   ],
-  templateUrl: './app.component.html',
+  selector: 'app-root',
+  standalone: true,
   styleUrl: './app.component.scss',
+  templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
   private readonly revealService = inject(RevealService);
