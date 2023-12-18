@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:pages": "ng build --base-href /angular-101-event/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
@@ -37,6 +38,7 @@
     "@types/reveal.js": "^4.4.8",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
+    "angular-cli-ghpages": "^0.6.2",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.1.0",
